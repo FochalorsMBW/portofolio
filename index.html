@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Guah</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="darkmode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="translate.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#home">Portfolio</a>
+            </div>
+            <div class="language-selector">
+                <button id="lang-toggle" class="lang-btn" data-i18n="language">EN</button>
+            </div>
+            <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle Dark Mode">
+                <i id="darkModeIcon" class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active" data-i18n="nav-home">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link" data-i18n="nav-about">About</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link" data-i18n="nav-projects">Projects</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link" data-i18n="nav-skills">Skills</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link" data-i18n="nav-contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1 data-i18n="hero-title">Hello, I'm <span class="highlight">Your Name</span></h1>
+                <h2 data-i18n="hero-subtitle">Full Stack Developer</h2>
+                <p data-i18n="hero-desc">Creating modern and responsive web applications</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary-btn" data-i18n="view-work">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn" data-i18n="contact-me">Contact Me</a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/FochalorsMBW" aria-label="GitHub" target="_blank"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com" aria-label="Twitter" target="_blank"><i
+                            class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="about-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="image-container">
+                            <img src="assets/ppgw.jpeg" alt="Profile picture">
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p data-i18n="about-p1">Hello! I'm a passionate full-stack developer with expertise in building
+                            modern, responsive, and user-friendly web applications. With a strong background in both
+                            front-end and back-end technologies, I create seamless digital experiences that meet client
+                            needs.</p>
+                        <p data-i18n="about-p2">I love solving complex problems and constantly learning new technologies
+                            to stay at the forefront of web development. When I'm not coding, you can find me exploring
+                            nature, reading tech blogs, or contributing to open-source projects.</p>
+                        <a href="#" class="btn primary-btn" data-i18n="download-resume">Download Resume</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="projects-title">My Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/coffeebeans.png" alt="Project 1">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-i18n="project1-title">Coffee Beans E-Marketplace</h3>
+                            <p data-i18n="project1-desc">Responsive and interactive coffee beans e-marketplace</p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://fochalorsmbw.github.io/coffeebeans" class="btn small-btn"
+                                    data-i18n="live-demo" target="_blank">Live Demo</a>
+                                <a href="https://github.com/FochalorsMBW/coffeebeans"
+                                    class="btn small-btn secondary-btn" data-i18n="source-code" target="_blank">Source
+                                    Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/dexedu.png" alt="Project 2">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-i18n="project2-title">E-Learning Website</h3>
+                            <p data-i18n="project2-desc">Responsive and interactive e-learning page</p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://fochalorsmbw.github.io/e-learning" class="btn small-btn"
+                                    data-i18n="live-demo" target="_blank">Live Demo</a>
+                                <a href="https://github.com/FochalorsMBW/e-learning" class="btn small-btn secondary-btn"
+                                    data-i18n="source-code" target="_blank">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/harvest.png" alt="Project 3">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-i18n="project3-title">Vegetables E-Marketplace</h3>
+                            <p data-i18n="project3-desc">A Vegetarian Website that make you feel fresh doing transaction
+                            </p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>LocalStorage</span>
+                                <span>CSS</span>
+                                <span>HTML</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://fochalorsmbw.github.io/harvester" class="btn small-btn"
+                                    data-i18n="live-demo" target="_blank">Live Demo</a>
+                                <a href="https://github.com/FochalorsMBW/harvester" class="btn small-btn secondary-btn"
+                                    data-i18n="source-code" target="_blank">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="skills-title">Skills & Expertise</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3 data-i18n="frontend">Frontend</h3>
+                        <ul class="skill-list">
+                            <li>
+                                <span>HTML5</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 95%"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>CSS3</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>JavaScript</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Responsive Design</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3 data-i18n="backend">Backend</h3>
+                        <ul class="skill-list">
+                            <li>
+                                <span>Node.js</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Express</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>MongoDB</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 95%"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>SQL</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3 data-i18n="tools">Tools & Others</h3>
+                        <ul class="skill-list">
+                            <li>
+                                <span>Git & GitHub</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>RESTful APIs</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Responsive Design</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Testing</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="contact-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3 data-i18n="email">Email</h3>
+                                <p>luthfialhakim@ngoding.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3 data-i18n="location">Location</h3>
+                                <p>Lubuk Hati, Gotham</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3 data-i18n="phone">Phone</h3>
+                                <p>+62 895-8061-455</p>
+                            </div>
+                        </div>
+                        <div class="social-icons large">
+                            <a href="https://github.com/FochalorsMBW" aria-label="GitHub" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a>
+                            <a href="https://twitter.com" aria-label="Twitter" target="_blank"><i
+                                    class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name" data-i18n="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" data-i18n="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" data-i18n="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" data-i18n="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn primary-btn" data-i18n="send-message">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p data-i18n="copyright">&copy; 2025 Dexter A.K.A Luthfi Al Hakim. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#home" data-i18n="nav-home">Home</a>
+                <a href="#about" data-i18n="nav-about">About</a>
+                <a href="#projects" data-i18n="nav-projects">Projects</a>
+                <a href="#skills" data-i18n="nav-skills">Skills</a>
+                <a href="#contact" data-i18n="nav-contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="darkmode.js"></script>
+</body>
+
+</html>
